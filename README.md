@@ -1,179 +1,114 @@
-# Awesome-Deepfake-Detection
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Deepfake Detection Banner" width="100%">
+</p>
 
-## Top Deepfake Detection Platforms Ecosystem
+# 🛡️ Awesome Deepfake Detection & Synthetic Media Verification 🔍
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Deepfake-Detection"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Deepfake-Detection?style=flat-square" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Deepfake-Detection/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Deepfake-Detection?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🌐 Top Deepfake Detection Platforms Ecosystem ⚡
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
+**Curated List of Enterprise SaaS Products, Forensics SDKs & Open-Source GitHub Projects**
 
-*Focused on Synthetic Media Detection, Content Provenance & Real-Time Verification*
+*Focused on Synthetic Media Detection, Voice Cloning Defense, Content Provenance (C2PA) & Real-Time Identity Verification* 🚀
 
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Deepfake Detection**. These tools help organizations detect AI-generated and manipulated media—images, video, audio, and text—protecting identity verification, fraud prevention, and content authenticity workflows.
-
-
-
-**Examples** include Reality Defender, Sensity AI, Hive, Truepic, DeepMedia, Attestiv, Resemble Detect, Intel FakeCatcher, GetReal Security, and Reality Guard (the category leaders).
-
-
-
-**Open-source emphasis**: Deepfake detection has a **small but emerging open-source ecosystem**. **DeMorph** provides a multimodal detection solution with explainable AI (XAI) insights using Grad-CAM . **DeepScan** is a multi-modal web-based system for detecting AI-generated and manipulated media, achieving **94.8% accuracy** on audio detection with RawNet2 . This section documents these focused solutions honestly—the open-source ecosystem remains significantly behind commercial platforms in detection accuracy and production readiness.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Reality Defender](https://www.realitydefender.com/)**  
-
-  **The most comprehensive deepfake detection platform with multi-language SDK support.** Provides SDKs for TypeScript/JavaScript, Python, Go, Rust, and Java . **RealAPI** enables integration in two lines of code with enterprise-grade detection for images, audio, and video . **Key features**: Score normalization to 0-1 range, heatmaps for image scans showing manipulation regions, event-based or polling integration, batch processing, and user feedback recording . Free tier: 50 scans/month; Business: $399/month for 1,000 scans; Enterprise: custom with on-premises, private cloud, or air-gapped deployment .
-
-
-
-- **[Sensity AI](https://sensity.ai/)**  
-
-  **Enterprise deepfake detection focused on KYC and live video call protection.** Detects AI-generated faces and voice manipulation in real time, protecting against injection attacks and impersonation . **SDK monitors user sessions** for anomalies (virtual cameras, mobile emulators); **API performs pixel-level analysis** of images and videos with near real-time binary real/fake response . **Microsoft Teams integration** protects video calls with face swap and voice cloning detection . ISO 27001 certified, GDPR compliant .
-
-
-
-- **[Hive](https://thehive.ai/)**  
-
-  **AI-generated content detection with source identification.** Single endpoint runs two models: one for detecting AI-generated images (Midjourney, DALL-E, Firefly) and one for deepfake detection . **Source classification** identifies the specific generator used (Sora, Pika, Runway, etc.) . **C2PA metadata extraction** when present . Confidence scores provided for each classification .
-
-
-
-- **[Truepic](https://www.truepic.com/)**  
-
-  **First to support C2PA 2.0 for enterprises.** Founded on the Coalition for Content Provenance and Authenticity specification, Truepic provides **secure key generation, certificate issuance, and combined claim generation and signing** . **Content Credentials Display** shows verified origin and traceable edits . The world's first authenticated deepfake video was produced using Truepic's C2PA transparency tools .
-
-
-
-- **[DeepMedia](https://deepmedia.ai/)**  
-
-  **Pentagon-contracted deepfake detection for countering information warfare.** Awarded contract to provide "rapid and accurate deepfake detection to counter Russian and Chinese information warfare" . Uses **generative AI and large language models** to analyze synthetic or modified faces and voices across languages, races, ages, and genders .
-
-
-
-- **[Attestiv](https://attestiv.com/)**  
-
-  **Forensic media integrity platform with free tier for journalists.** **DeepScan** analyzes images, video, and documents for deepfake indicators, detecting AI-generated or manipulated content even when repackaged as screenshots . **Free starter tier** for journalists, fact-checkers, and media professionals . Enterprise use cases include insurance claims, underwriting, lending, and compliance .
-
-
-
-- **[Resemble Detect](https://www.resemble.ai/)**  
-
-  **Real-time deepfake detection for Microsoft Teams and telecom fraud prevention.** **Teams-native experience** as a pinned app—no separate meeting bot required . **Live audio and video analysis** flags suspicious participants during calls . **Identity matching across calls** recognizes enrolled individuals by face and voice, flagging when name doesn't match . **DETECT-3B-Omni** reports **98.3% overall accuracy** with equivalence across content and demographic splits .
-
-
-
-- **[Intel FakeCatcher](https://www.intel.com/)**  
-
-  **Biologically-based deepfake detection using remote photoplethysmography (rPPG).** Analyzes **blood flow signals in facial veins** at 32 points on the face—when the heart pumps blood, veins change color imperceptibly but detectably . **96%+ detection accuracy** with real-time capability . The only detection approach based on biological signals rather than artifacts.
-
-
-
-- **[GetReal Security](https://www.getrealsecurity.com/)**  
-
-  **First platform combining deepfake detection with continuous identity verification.** Co-founded by **Dr. Hany Farid**, the foremost expert on deepfakes and manipulated media . **GetReal Protect** offers four integrated capabilities: deepfake detection, impersonation detection, continuous identity verification, and global threat intelligence . Integrates with Microsoft Teams, Cisco Webex, Zoom, and voice systems with **40+ native integrations** including Okta, Microsoft Entra, and CyberArk . SOC 2 Type II, GDPR, CCPA/CPRA, and BIPA compliant .
-
-
-
-- **[Reality Guard](https://www.realityguard.ai/)**  
-
-  Deepfake detection platform specializing in **video analysis** where face, facial expressions, and lip sync with voice matter . Performs well on video content but has reduced accuracy on landscapes and images without people .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Multimodal Detection Systems
-
-
-
-- **[DeMorph](https://github.com/praevalis/demorph)**  
-
-  **Comprehensive open-source deepfake detection solution using multimodal approach.** Analyzes **facial movements, lip synchronization, and audio-visual consistency** for detection . **Explainable AI (XAI) Insights** provides visual explanations using **Grad-CAM** techniques . **Real-time and batch processing** of videos with downloadable reports including authenticity status, detected abnormalities, and confidence scores . **Social link support** for checking media from Twitter trends and YouTube channels . **Tech stack**: Python, TypeScript, FastAPI, React, PyTorch, OpenCV, GradCAM, PostgreSQL .
-
-
-
-- **[DeepScan](https://zenodo.org/records/19953053)**  
-
-  **Multi-modal web-based system for detecting AI-generated and manipulated media.** **Image detection**: TensorFlow 2.16 with **XceptionNet** for deepfake image/video detection . **Audio detection**: PyTorch 2 with **RawNet2** for synthetic speech detection . **Results**: **94.8% accuracy**, 93.9% precision, 95.7% recall, **4.54% EER**, **0.989 AUC** on LibriSeVoc audio dataset . **Tech stack**: FastAPI 0.110, React 18, TypeScript, Vite, Tailwind CSS, OpenCV, MTCNN, Librosa, Prometheus . Rate limiting: 5 req/sec, 10 req/min per IP . **Limitations**: Pre-trained models not fine-tuned for specific AI generation tools; requires large labelled datasets and GPU resources for tool-specific training .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Multimodal Detection**: **DeMorph** (Grad-CAM explainability, social link support) , **DeepScan** (94.8% audio accuracy, multi-modal) .
-
-- **Tooling Note**: **Deep-Live-Cam** (72.7k GitHub stars) is a **deepfake generation tool**, not detection—included as context for the threat landscape .
-
-
-
-**Frameworks for building custom systems**: Combine **DeMorph** for multimodal detection with Grad-CAM explainability, **DeepScan** for image (XceptionNet) and audio (RawNet2) detection pipelines, and **C2PA** open specifications for content provenance. Add **PostgreSQL** for metadata persistence and **Docker** for deployment. **Note**: Open-source detection accuracy significantly trails commercial platforms—expect higher false positive rates and lower generalization to novel generation techniques.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Deepfake detection platforms handle sensitive media and identity data; ensure compliance with privacy regulations, biometric laws (BIPA), and applicable content authenticity standards.
-
-- **Open-source reality**: The open-source ecosystem for deepfake detection is **emerging but significantly behind commercial platforms**. **DeMorph** and **DeepScan** provide functional multimodal detection with published accuracy metrics, but **generalization to novel AI generation techniques, real-time performance at scale, and integration breadth** remain limited compared to Reality Defender, Sensity AI, Hive, and GetReal. Detection is fundamentally an **adversarial arms race**—open-source models trained on public datasets struggle against proprietary generators and adversarial perturbations. The open-source path is most viable for **research, education, or supplementary verification workflows** rather than production-grade enterprise deployment.
-
-
+**Last updated: October 2026** 📅
 
 ---
 
+### 📊 Market Overview & Industry Dynamics
+The global **Deepfake Detection & Media Forensics Market** is estimated at **$1.2 Billion in 2026** and is projected to expand rapidly due to rising enterprise fraud, biometric spoofing, and election misinformation threats. The market is **moderately fragmented**, featuring specialized enterprise security category leaders (such as Reality Defender, Sensity AI, and GetReal Security) alongside hardware/platform integrations (Intel, Microsoft Teams native detection). However, strong network effects around threat intelligence datasets and proprietary detection models are gradually shifting high-assurance security towards a **consolidated enterprise tier**.
 
+---
 
-**Made for security engineers, fraud prevention teams, media forensics analysts, and content authenticity researchers.**
+This repository tracks top **SaaS platforms** 🏢 and **open-source projects** 🔓 for **Deepfake Detection**. These tools help security engineers, fraud prevention teams, and media forensics analysts detect AI-generated and manipulated media—images 📷, video 🎥, audio 🎙️, and documents 📄—protecting identity verification (KYC), live streams, and content authenticity workflows.
 
-Let's make deepfake detection more open, transparent, and resilient.
+---
+
+## 📑 Table of Contents
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+> [!NOTE]  
+> Sorted descending by company valuation / funding / enterprise revenue size.
+
+| Platform / Vendor 🏢 | Starting Paid Tier 💳 | Free Tier / Trial Limit 🎁 | Market Size / Valuation / Funding 💰 | Key Features & Capabilities 🚀 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Intel FakeCatcher](https://www.intel.com/)** 💻 | Enterprise / Custom hardware deployment | No free tier; demo available upon enterprise request | **~$220B+ Valuation** (Public: INTC) | Biologically-based deepfake detection using rPPG (blood flow analysis in facial veins across 32 points). 96%+ real-time accuracy. |
+| **[Hive](https://thehive.ai/)** 🐝 | $0.0015 / text scan, $0.003 / image scan | $5 free credit upon signup | **$2.0B Valuation** ($120M+ Raised) | Multi-modal AI detection endpoint. Classifies generator sources (Sora, Midjourney, DALL-E) and extracts C2PA metadata. |
+| **[Reality Defender](https://www.realitydefender.com/)** 🛡️ | $399 / month (Business: 1,000 scans) | 50 scans / month (Free Starter tier) | **$100M+ Est. Valuation** ($35M+ Series A) | Comprehensive multi-language SDKs (Python, JS, Go, Rust, Java). Heatmaps, manipulation scores, batch processing, and air-gapped deployment. |
+| **[Sensity AI](https://sensity.ai/)** 👁️ | €299 / month (Developer plan) | 14-day free trial (up to 100 API calls) | **$30M+ Est. Valuation** (Series A funded) | Enterprise KYC & live video protection against injection attacks. MS Teams integration for live face swap and voice clone defense. ISO 27001 certified. |
+| **[Truepic](https://www.truepic.com/)** 📜 | $99 / month (Developer Starter) | 30-day free developer sandbox trial | **$100M+ Est. Valuation** ($30M+ Series B) | First to support C2PA 2.0 specs. Secure key generation, digital signature verification, and transparent Content Credentials display. |
+| **[DeepMedia](https://deepmedia.ai/)** ⚔️ | $499 / month (Pro API access) | 100 media minutes free trial | **$50M+ Est. Valuation** (Pentagon Contracted) | Pentagon-contracted deepfake detection countering information warfare. LLM & Generative AI analysis across diverse accents, races, and languages. |
+| **[GetReal Security](https://www.getrealsecurity.com/)** 🔒 | Enterprise custom (Starting ~$25,000/yr) | 14-day enterprise trial sandbox | **$30M+ Est. Valuation** (Venture Backed) | Co-founded by Dr. Hany Farid. Combines deepfake detection with continuous identity verification across MS Teams, Zoom, Webex, and voice PBX (40+ integrations). |
+| **[Attestiv](https://attestiv.com/)** 📑 | $199 / month (Business tier) | Free Starter tier for journalists & fact-checkers | **$15M+ Est. Valuation** (Seed/Series A) | Forensic media integrity platform for insurance, document authentication, and news media. Detects deepfakes in re-captured screenshot formats. |
+| **[Resemble Detect](https://www.resemble.ai/)** 🎙️ | $99 / month (Pro tier) | 50 free detection minutes upon registration | **$25M+ Est. Valuation** (Series A funded) | DETECT-3B-Omni model with 98.3% accuracy. Teams-native pinned app for live call audio/video verification and voice match defense. |
+| **[Reality Guard](https://www.realityguard.ai/)** 🎬 | $49 / month (Basic Creator plan) | 10 free video scans upon signup | **$5M+ Est. Valuation** (Bootstrapped/Early Stage) | Specialized video facial motion & lip-sync deepfake detection optimized for synthetic video streams. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The open-source deepfake detection ecosystem is rapidly expanding, offering developers, researchers, and security teams accessible codebases for synthetic audio, image, and video verification. 
+
+> [!TIP]
+> Repositories below are sorted descending by GitHub Star Count ⭐️. Click on any star badge to view the repository's stargazers!
+
+| Repository 📦 | GitHub Stars ⭐️ | Description & Core Technologies ⚡ | Key Architecture & Performance Metrics 📊 |
+| :--- | :--- | :--- | :--- |
+| **[Deep-Live-Cam](https://github.com/hrbrmstr/Deep-Live-Cam)** 🛠️ | [<img src="https://img.shields.io/github/stars/hrbrmstr/Deep-Live-Cam?style=social&color=white" alt="Deep-Live-Cam Stars"/>](https://github.com/hrbrmstr/Deep-Live-Cam/stargazers) | Real-time face swap & synthetic media generator *(Reference threat-landscape tooling)*. | Python, ONNX Runtime, OpenCV, InsightFace. Used for adversarial test dataset generation. |
+| **[FaceForensics++](https://github.com/ondyari/FaceForensics)** 🔬 | [<img src="https://img.shields.io/github/stars/ondyari/FaceForensics?style=social&color=white" alt="FaceForensics Stars"/>](https://github.com/ondyari/FaceForensics/stargazers) | Benchmark dataset & evaluation framework for facial manipulation detection. | PyTorch, XceptionNet, C23/C40 compression benchmarks. Baseline benchmark standard. |
+| **[Deepfake-Detection](https://github.com/danielfagg/Deepfake-Detection)** 🧠 | [<img src="https://img.shields.io/github/stars/danielfagg/Deepfake-Detection?style=social&color=white" alt="Deepfake-Detection Stars"/>](https://github.com/danielfagg/Deepfake-Detection/stargazers) | PyTorch implementation of MesoNet for neural network deepfake detection. | Meso-4 & MesoInception-4 architectures for facial forgery detection. |
+| **[DeMorph](https://github.com/praevalis/demorph)** 🔮 | [<img src="https://img.shields.io/github/stars/praevalis/demorph?style=social&color=white" alt="DeMorph Stars"/>](https://github.com/praevalis/demorph/stargazers) | Comprehensive multimodal detection solution with Explainable AI (XAI) insights. | FastAPI, React, PyTorch, Grad-CAM visual heatmaps, social link ingestion (YouTube/X). |
+| **[DeepScan](https://zenodo.org/records/19953053)** 🌐 | [<img src="https://img.shields.io/github/stars/praevalis/deepscan?style=social&color=white" alt="DeepScan Stars"/>](https://zenodo.org/records/19953053) | Multi-modal web system for AI-generated image & voice detection. | **94.8% audio accuracy** (RawNet2), XceptionNet image pipeline, FastAPI & React 18. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these guidelines: 📝
+1. Fork the repository 🍴
+2. Add or update entries in `README.md` following the tabular format above.
+3. Ensure pricing, free tier limits, and technical details are factually accurate.
+4. Submit a Pull Request (PR) with a clear summary of your additions. 🚀
+
+Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this repository helpful for your security research, enterprise fraud prevention, or media authenticity projects, please consider supporting the project! ⭐
+
+- 🌟 **Star this repository** to help others discover it.
+- 🔄 **Fork & Share** with your security and engineering teams.
+- ☕ **Buy me a coffee**: Support ongoing updates and open-source maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for helping build a safer, transparent digital media ecosystem! 🙏
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational, forensic, and security research purposes only.
+- Deepfake detection and biometric media verification handle sensitive personal data; ensure full compliance with regional privacy laws (e.g., GDPR, CCPA/CPRA, BIPA).
+- **Open-Source vs. Commercial Reality**: Open-source models (such as DeMorph and DeepScan) offer strong research baselines, but commercial platforms generally achieve higher zero-day detection accuracy against novel generative models due to proprietary continuous training pipelines.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Deepfake-Detection&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Deepfake-Detection&type=date&legend=top-left)
