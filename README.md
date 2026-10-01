@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Deepfake-Detection"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Deepfake-Detection?style=flat-square" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Deepfake-Detection"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Deepfake-Detection?style=flat-square" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Deepfake-Detection/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Deepfake-Detection?style=flat-square" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -65,9 +65,9 @@ This repository tracks top **SaaS platforms** 🏢 and **open-source projects** 
 The open-source deepfake detection ecosystem is rapidly expanding, offering developers, researchers, and security teams accessible codebases for synthetic audio, image, and video verification. 
 
 > [!TIP]
-> Repositories below are sorted descending by GitHub Star Count ⭐️. Click on any star badge to view the repository's stargazers!
+> Repositories below are sorted descending by GitHub Stars_Count ⭐️. Click on any Stars_Badge to view the repository's stargazers!
 
-| Repository 📦 | GitHub Stars ⭐️ | Description & Core Technologies ⚡ | Key Architecture & Performance Metrics 📊 |
+| Repository 📦 | GitHub_Stars ⭐️ | Description & Core Technologies ⚡ | Key Architecture & Performance Metrics 📊 |
 | :--- | :--- | :--- | :--- |
 | **[Deep-Live-Cam](https://github.com/hrbrmstr/Deep-Live-Cam)** 🛠️ | [<img src="https://img.shields.io/github/stars/hrbrmstr/Deep-Live-Cam?style=social&color=white" alt="Deep-Live-Cam Stars"/>](https://github.com/hrbrmstr/Deep-Live-Cam/stargazers) | Real-time face swap & synthetic media generator *(Reference threat-landscape tooling)*. | Python, ONNX Runtime, OpenCV, InsightFace. Used for adversarial test dataset generation. |
 | **[FaceForensics++](https://github.com/ondyari/FaceForensics)** 🔬 | [<img src="https://img.shields.io/github/stars/ondyari/FaceForensics?style=social&color=white" alt="FaceForensics Stars"/>](https://github.com/ondyari/FaceForensics/stargazers) | Benchmark dataset & evaluation framework for facial manipulation detection. | PyTorch, XceptionNet, C23/C40 compression benchmarks. Baseline benchmark standard. |
